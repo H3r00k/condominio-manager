@@ -1,15 +1,5 @@
 [
   {
-    "id": "1a4460c6-5840-481e-9179-fc38cbe18b93",
-    "name": "marco",
-    "subname": "ienna",
-    "email": "marco@gmail.com",
-    "password": "$2b$10$6SRbc.WwfwtmfYHtWAEsp.3qvOobyDlQj5RwX1S3IV1sku5pTCU2y",
-    "villetta": "7L",
-    "role": "admin"
-  },
-  
-  {
     "id": "6632ce92-1807-4b0f-b1e5-53184ebaf225",
     "name": "nameUser",
     "subname": "subnameUser",
@@ -44,5 +34,14 @@
     "password": "$2b$10$8R973AHVuTfxuHp.C24ZSumhhbCk61BBtkIMM4lUzIWR4E5OVPXa.",
     "villetta": "7B",
     "role": "user"
+  },
+  {
+    "id": "26f53c8c-f4d3-4fd5-8113-f1231ee70ff9",
+    "name": "Admin",
+    "subname": "Admin",
+    "email": "admin@admin.com",
+    "password": "$2b$10$a/9cAY2tEqK3EcKm7P/lRe7ZefrzlIo62BNn38jXSzeAKFDutSGAK",
+    "villetta": "7E",
+    "role": "admin"
   }
 ]

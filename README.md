@@ -57,6 +57,15 @@ npm install
 ng serve
 App Angular su http://localhost:4200
 
+## 🔐 Account di test
+
+Per provare le funzionalità da amministratore, puoi usare questo account predefinito:
+
+- **Email**: `admin@admin.com`
+- **Password**: `admin123`
+
+(oppure crea un tuo utente nel file `users.json` con ruolo `"admin"` o `"user"`)
+
 
 
 🧙🏻‍♂️ Autore
@@ -126,6 +135,18 @@ Server runs on http://localhost:3000
 cd frontend
 npm install
 ng serve
+
+
+---
+
+## 🔐 Test Account
+
+To explore the admin features, use this default account:
+
+- **Email**: `admin@admin.com`
+- **Password**: `admin123`
+
+(or create your own user in the `users.json` file with role `"admin"` or `"user"`)
 
 
 🧙🏻‍♂️ Author
