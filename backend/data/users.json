@@ -8,15 +8,7 @@
     "villetta": "7L",
     "role": "admin"
   },
-  {
-    "id": "53b37688-0fc8-428a-aa75-df4e6cc3adcd",
-    "name": "gabriella",
-    "subname": "conte",
-    "email": "gabriella.conte47@gmail.com",
-    "password": "$2b$10$MdFqejq3JJ0JWTHskjf.MuO/zgZ3CPuvUhdwuc7XPx3ywAZa2Gc/y",
-    "villetta": "7L",
-    "role": "user"
-  },
+  
   {
     "id": "6632ce92-1807-4b0f-b1e5-53184ebaf225",
     "name": "nameUser",
