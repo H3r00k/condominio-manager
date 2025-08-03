@@ -1,0 +1,66 @@
+<article class="wrapper">
+  <!-- ✅ Messaggio di Successo -->
+  @if (successMessage) {
+  <div class="popupMess success">
+    {{ successMessage }}
+  </div>
+  } @if (errorMessage) {
+  <!-- ❌ Messaggio di Errore -->
+  <div class="popupMess error">
+    {{ errorMessage }}
+  </div>
+  }
+
+  <app-header />
+ 
+  
+  @for (post of posts; track post.id) {
+  <app-post-details [post]="post" (deleted)="onPostDeleted($event)" />
+
+  } 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @if (auth.user()?.role === 'admin') {
+  <button class="btnAdd" (click)="showPopupPost()">
+    <img src="/images/ico/icoAdd.png" alt="" />
+  </button>
+
+  } @if (popupPost) {
+  <div class="popup">
+    <h1>Create a new post</h1>
+    <form
+      class="form"
+      autocomplete="off"
+      (ngSubmit)="onSubmit(form)"
+      #form="ngForm"
+    >
+      <input
+        type="text"
+        name="title"
+        placeholder="Titolo"
+        [(ngModel)]="formData.title"
+      />
+      <textarea
+        name="content"
+        id="content"
+        cols="30"
+        rows="10"
+        [(ngModel)]="formData.content"
+      ></textarea>
+      <button class="submit">Submit</button>
+    </form>
+
+    <button class="closePopup" (click)="closePopupPost()">
+      <img src="/images/ico/icoDelete2.png" alt="" />
+    </button>
+  </div>
+
+  }
+</article>

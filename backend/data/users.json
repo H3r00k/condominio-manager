@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1a4460c6-5840-481e-9179-fc38cbe18b93",
+    "name": "marco",
+    "subname": "ienna",
+    "email": "marco@gmail.com",
+    "password": "$2b$10$6SRbc.WwfwtmfYHtWAEsp.3qvOobyDlQj5RwX1S3IV1sku5pTCU2y",
+    "villetta": "7L",
+    "role": "admin"
+  },
+  {
+    "id": "53b37688-0fc8-428a-aa75-df4e6cc3adcd",
+    "name": "gabriella",
+    "subname": "conte",
+    "email": "gabriella.conte47@gmail.com",
+    "password": "$2b$10$MdFqejq3JJ0JWTHskjf.MuO/zgZ3CPuvUhdwuc7XPx3ywAZa2Gc/y",
+    "villetta": "7L",
+    "role": "user"
+  },
+  {
+    "id": "6632ce92-1807-4b0f-b1e5-53184ebaf225",
+    "name": "nameUser",
+    "subname": "subnameUser",
+    "email": "test@gmail.com",
+    "password": "$2b$10$7fcrgkFXJDlz/GJcAErXyuUt27/Yzk3ILg7PX9.0dFzNdmWCfy.3K",
+    "villetta": "7B",
+    "role": "user"
+  },
+  {
+    "id": "ad906063-faf9-471d-8f45-7a7716365a47",
+    "name": "giovanni",
+    "subname": "impastato",
+    "email": "giovanni@gmail.com",
+    "password": "$2b$10$k.R6F3ZBdHHCgYyYOjlMDOf2QRo77aeyJbktpyE2g3qHwEwwbkDCK",
+    "villetta": "7B",
+    "role": "user"
+  },
+  {
+    "id": "56e964be-c5c0-4cac-88a2-edd0cc2fd5e8",
+    "name": "franceschino",
+    "subname": "impastato",
+    "email": "franceschino@gmail.com",
+    "password": "$2b$10$q9m5pNcJhl.GymizULpawutITnirOCR2VFOFQcWmdwjE8odvjwl86",
+    "villetta": "7G",
+    "role": "user"
+  },
+  {
+    "id": "df0d87ce-37e1-4596-ba30-128e3fcc0e1b",
+    "name": "andrea",
+    "subname": "andrea",
+    "email": "andrea@gmail.com",
+    "password": "$2b$10$8R973AHVuTfxuHp.C24ZSumhhbCk61BBtkIMM4lUzIWR4E5OVPXa.",
+    "villetta": "7B",
+    "role": "user"
+  }
+]

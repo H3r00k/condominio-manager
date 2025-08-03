@@ -1,0 +1,16 @@
+<body>
+  @if (view() === 'login'){
+  <app-login />
+  }@else if (view() === 'register') {
+    <app-register />
+  }@else if (view() === 'home') {
+    <app-home-page/>
+  }
+
+  @else if (view() === 'bollette') {
+    <app-bollette-list/>
+  }
+  @else if (view() === 'richieste') {
+    <app-ticket-request/>
+  }
+</body>

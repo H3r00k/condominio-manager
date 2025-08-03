@@ -1,0 +1,101 @@
+.wrapper {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/* POPUP */
+.popup {
+  position: absolute;
+  top: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+/* -------------------------------------------- */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  width: 25rem;
+  height: 25rem;
+  margin: 0 auto;
+}
+
+.form h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 1rem;
+}
+.form legend {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.form button {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.form p {
+  color: #fff;
+  text-align: center;
+  margin-top: 1rem;
+  text-shadow: #000000 0.1em 0.2em 0.2em;
+}
+
+.form a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: #000000 0.1em 0.2em 0.2em;
+  cursor: pointer;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}

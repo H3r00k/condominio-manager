@@ -1,0 +1,23 @@
+<app-header />
+<div class="wrapper">
+    
+    @if (auth.user()?.role === 'user') {
+    <app-user-ticket-form />
+    } @if (auth.user()?.role === 'admin' && showButtonTickets()) {
+    <div class="containerButton">
+      <h1>Benvenuto admin qui puoi trovare le richieste</h1>
+      <button class="btnRequest" (click)="showTickets()">
+        <img src="images/ico/icoRequest.png" alt="ico richiesta" />
+        <p>{{ ticketCount() }}</p>
+      </button>
+    </div>
+    }
+    
+    @if (auth.user()?.role === 'admin' && showAdminPanel()) {
+    <app-admin-ticket-list (visualizza)="apriDettaglio($event)"/>
+    }
+
+    @if (selectedTicket()) {
+        <app-ticket-details [ticket]="selectedTicket()" (deleted)="rimuoviTicket($event)"/>
+    }
+</div>

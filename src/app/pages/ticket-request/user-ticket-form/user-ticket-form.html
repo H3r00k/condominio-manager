@@ -1,0 +1,14 @@
+<article class="wrapper">
+    <div class="title"><h1>Compila il Ticket!</h1></div>
+
+    <form  class="form" (ngSubmit)="onSubmit(form)" #form="ngForm">
+        <label for="object">Oggetto</label>
+        <input type="text" name="title" id="title" placeholder="Oggetto del Ticket" [(ngModel)]="formData.object">
+        <label for="message">Descrizione</label>
+        <textarea name="contentMessage" id="contentMessage" rows="20" cols="50" placeholder="Descrizione del Ticket" [(ngModel)]="formData.content" > </textarea>
+        <button class="btnSend">
+            Invia
+            <img src="images/ico/icoSend.png" alt="icoSend">
+        </button>
+    </form>
+</article>

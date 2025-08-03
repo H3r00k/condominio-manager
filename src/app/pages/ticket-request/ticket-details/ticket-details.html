@@ -1,0 +1,12 @@
+<article class="ticket-details-card">
+  <h2>Dettaglio Richiesta</h2>
+
+  <section class="ticket-info">
+    <p><strong>Nome Utente:</strong> {{ ticket!.nomeUtente | capitalize}}</p>
+    <p><strong>Oggetto:</strong> {{ ticket!.object |capitalize}}</p>
+    <p><strong>Descrizione:</strong> {{ ticket?.content }}</p>
+    <p><strong>Data:</strong> {{ ticket!.createdAt| dateFormat }}</p>
+  </section>
+
+  <button class="btn-close" (click)="deleteTicket()">Cancella Ticket</button>
+</article>

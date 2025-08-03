@@ -1,0 +1,25 @@
+<article class="wrapper">
+  <table class="ticket-table">
+    <thead>
+      <tr>
+        <th>Nome Utente</th>
+        <th>Oggetto</th>
+        <th>Data</th>
+        <th>Azioni</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (ticket of (tickets() | orderTicketsDate); track ticket.id) {
+
+      <tr>
+        <td>{{ticket.nomeUtente}}</td>
+        <td>{{ticket.object}}</td>
+        <td>{{ticket.createdAt | dateFormat}}</td>
+        <td>
+          <button (click)="selectTicket(ticket)">Visualizza</button>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</article>

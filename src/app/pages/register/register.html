@@ -1,0 +1,83 @@
+<article class="wrapper">
+  <!-- ✅ Messaggio di Successo -->
+  @if (successMessage) {
+  <div class="popup success">
+    {{ successMessage }}
+  </div>
+  } @if (errorMessage) {
+  <!-- ❌ Messaggio di Errore -->
+  <div class="popup error">
+    {{ errorMessage }}
+  </div>
+
+  }
+
+  <form class="form" (ngSubmit)="onSubmit(form)" autocomplete="off" #form="ngForm">
+    <h1>Registrati</h1>
+    <legend>Nome</legend>
+    <input
+      type="text"
+      placeholder="Nome"
+      name="name"
+      [(ngModel)]="formData.name"
+      required="true"
+    />
+    <legend>Cognome</legend>
+    <input
+      type="text"
+      placeholder="Cognome"
+      name="subname"
+      [(ngModel)]="formData.subname"
+      required="true"
+    />
+    <legend>Email</legend>
+    <input
+      type="email"
+      placeholder="Email"
+      name="email"
+      [(ngModel)]="formData.email"
+      required="true"
+    />
+    <legend>Villetta</legend>
+    <select
+      name="Villetta"
+      id="villetta"
+      name="villetta"
+      [(ngModel)]="formData.villetta"
+      required="true"
+    >
+      <option value="" disabled selected>---Seleziona---</option>
+      <option value="7A">7A</option>
+      <option value="7B">7B</option>
+      <option value="7C">7C</option>
+      <option value="7D">7D</option>
+      <option value="7E">7E</option>
+      <option value="7F">7F</option>
+      <option value="7G">7G</option>
+      <option value="7H">7H</option>
+      <option value="7I">7I</option>
+      <option value="7L">7L</option>
+      <option value="7M">7M</option>
+      <option value="7N">7N</option>
+    </select>
+
+    <legend>Password</legend>
+    <input
+      type="password"
+      placeholder="Password"
+      name="password"
+      [(ngModel)]="formData.password"
+      required="true"
+    />
+    <legend>Conferma Password</legend>
+    <input
+      type="password"
+      placeholder="Password"
+      name="confirmPassword"
+      [(ngModel)]="confirmPassword"
+      required="true"
+    />
+    <button type="submit">Registrati</button>
+    <p>Hai già un account? <a (click)="goToLoginPage()">Accedi</a></p>
+  </form>
+</article>

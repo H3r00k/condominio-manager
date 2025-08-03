@@ -1,0 +1,41 @@
+<app-header/>
+
+<article class="wrapper">
+  @for (bolletta of bollette | orderByDateDescendingPipe; track bolletta.id) {
+
+    <app-bollette-details [bolletta]="bolletta" (delete)="onDeleteBolletta($event)" />
+
+  }
+    
+</article>
+
+
+
+
+
+
+
+
+
+<!-- -------------bottone per popUp Upload file---------------- -->
+ @if (auth.user()?.role === 'admin') {
+  <button class="btnAdd" (click)="showPopupUpload()">
+    <img src="/images/ico/icoAdd.png" alt="" />
+  </button>
+}
+
+<!-- --------------POPUP PER UPLOAD FILE------------------>
+ @if (popupUpload) {
+
+    <div class="popupUpload">
+        <h1>Upload Bollette</h1>
+        <form class="formUpload" (ngSubmit)="onSubmit(form)" enctype="multipart/form-data" #form="ngForm">
+            <input type="text" name="title" id="title" placeholder="Titolo" [(ngModel)]="title" required>
+            <input type="file" name="file" id="file" accept="image/png, image/jpeg" (change)="onFileSelected($event)" required>
+            <button>Upload</button>
+          </form>
+          <button class="btnClosePop" (click)="closePopupUpload()">
+            <img src="/images/ico/icoDelete2.png" alt="">
+          </button>
+    </div>
+ }

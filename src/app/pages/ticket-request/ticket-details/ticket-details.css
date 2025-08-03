@@ -1,0 +1,48 @@
+.ticket-details-card {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ticket-details-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #0a2540;
+  text-align: center;
+}
+
+.ticket-info p {
+  font-size: 1.1rem;
+  color: #333;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  word-wrap: break-word; /* per compatibilità vecchia */
+  overflow-wrap: break-word; /* standard moderno */
+  white-space: pre-wrap;
+}
+
+.ticket-info strong {
+  color: #333;
+}
+
+.btn-close {
+  align-self: center;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-close:hover {
+  background-color: #0056b3;
+}

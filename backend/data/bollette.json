@@ -1,0 +1,20 @@
+[
+  {
+    "id": "90997efc-8869-43f2-8530-bb50703803ab",
+    "title": "Bolletta Luce",
+    "url": "http://localhost:3000/images/bollette/1754128881501-bollettaLuce.png",
+    "createdAt": "2025-08-02T10:01:21.513Z"
+  },
+  {
+    "id": "c7ae2837-59be-42c1-ac53-1c808ec101f7",
+    "title": "Bolletta Gas",
+    "url": "http://localhost:3000/images/bollette/1754129766269-bollettaGas.png",
+    "createdAt": "2025-08-02T10:16:06.285Z"
+  },
+  {
+    "id": "6f826db3-d73f-4532-b2fe-7b014193174e",
+    "title": "Bolletta Luce",
+    "url": "http://localhost:3000/images/bollette/1754144951617-bolluc2.png",
+    "createdAt": "2025-08-02T14:29:11.630Z"
+  }
+]

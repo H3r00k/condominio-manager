@@ -1,0 +1,14 @@
+<article class="container">
+  <div class="wrapCard">
+    <header><h1>{{post.title}}</h1></header>
+    <p>
+      {{post.content}}
+    </p>
+    <p class="author">creato da Admin <span>{{post.createdAt | dateFormat}}</span></p>
+    @if (auth.user()?.role === 'admin') {
+    <button class="btn" (click)="onDelete()">
+      <img src="/images/ico/icoDelete2.png" alt="" />
+    </button>
+    }
+  </div>
+</article>

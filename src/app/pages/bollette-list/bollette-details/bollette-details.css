@@ -1,0 +1,96 @@
+.wrapper {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.cardContainer {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.cardContainer:hover {
+  transform: scale(1.01);
+}
+
+.titleBolletta {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: #000000 0.1em 0.2em 0.2em;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+}
+
+.date{
+  font-size: 0.8rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cardContainer img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 30rem;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+.cardContainer img:hover {
+  filter: brightness(1.1);
+}
+
+.btnDownload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #1e90ff, #00bfff);
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.btnDownload:hover {
+  background: linear-gradient(135deg, #0077cc, #0099cc);
+}
+
+.btnDownload img {
+  width: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.btnDeleteCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ff634798, #ff44009f);
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+.btnDeleteCard:hover {
+  background: linear-gradient(135deg, #ff4500, #ff3300);
+}

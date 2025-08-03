@@ -1,0 +1,34 @@
+<article class="wrapper">
+  <article class="wrapper">
+    <!-- ✅ Messaggio di Successo -->
+    @if (successMessage) {
+    <div class="popup success">
+      {{ successMessage }}
+    </div>
+    } @if (errorMessage) {
+    <!-- ❌ Messaggio di Errore -->
+    <div class="popup error">
+      {{ errorMessage }}
+    </div>
+    }
+    <form class="form" (ngSubmit)="onSubmit(form)" #form="ngForm" autocomplete="off">
+      <h1>Login</h1>
+      <legend>Email</legend>
+      <input
+        type="email"
+        placeholder="Email"
+        name="email"
+        [(ngModel)]="loginData.email"
+      />
+      <legend>Password</legend>
+      <input
+        type="password"
+        placeholder="Password"
+        name="password"
+        [(ngModel)]="loginData.password"
+      />
+      <button type="submit">Login</button>
+      <p>Non hai un account? <a (click)="goToRegisterPage()">Registrati</a></p>
+    </form>
+  </article>
+</article>

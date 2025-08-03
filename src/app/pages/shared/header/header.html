@@ -1,0 +1,20 @@
+<header class="wrapper">
+  <div class="nav">
+    <ul>
+      @if (auth.user(); as currentUser) {
+
+      <li class="li" (click)="nav.setViewHome('home')">Home</li>
+      <li class="li" (click)="nav.setViewHome('bollette')">Bollette</li>
+      <li class="li" (click)="nav.setViewHome('richieste')">Richieste</li>
+      <li class="li" (click)="onLogout()">Logout</li>
+      <li class="user">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+          alt=""
+        />
+        <p>{{currentUser.name | capitalize}} {{currentUser.subname | capitalize}}</p>
+      </li>
+      }
+    </ul>
+  </div>
+</header>
